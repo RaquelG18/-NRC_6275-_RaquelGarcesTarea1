@@ -33,23 +33,23 @@
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #C8A2C8;">
             <a class="navbar-brand m-lg-3" href="#">
                 <Font color="purple">
-                    <h3>Lisos Perfectos</h3>
+                    <h3 class="lisos">Lisos Perfectos</h3>
                 </Font>
             </a>
             <!-- contenedor para los items de la navbar-->
             <div class="collapse navbar-collapse" id="margenNavbar">
                 <div class="navbar-nav">
 
-                    <a class="nav-item nav-link" href="#">
+                    <a class="nav-item nav-link" href="#lisos">
                         <h5>Inicio</h5>
                     </a>
-                    <a class="nav-item nav-link" href="#">
+                    <a class="nav-item nav-link" href="#servicios">
                         <h5>Servicios</h5>
                     </a>
-                    <a class="nav-item nav-link" href="#">
+                    <a class="nav-item nav-link" href="#misionVision">
                         <h5>Misión y Visión</h5>
                     </a>
-                    <a class="nav-item nav-link" href="#">
+                    <a class="nav-item nav-link" href="#contactenos">
                         <h5>Contáctenos</h5>
                     </a>
                 </div>
@@ -92,7 +92,7 @@
     <!-- Linea de división-->
     <hr>
     <!--Contenedor del Blockquote-->
-    <blockquote class="misionVision">
+    <blockquote id="servicios" style="background-color: #f0d0f0">
         <center class="ali-MV mt-5">
             <Font color="purple">
                 <h1>Servicios</h1>
@@ -100,7 +100,7 @@
         </center>
     </blockquote>
 
-    <!--Contenedor del Blockquote-->
+    <!--Contenedor de los componentes del apartado de Servicios-->
     <div class="row featurette  contenedor1">
         <div class="col-md-5">
             <h2 class="subTitulo">Alisados Permanentes con Cristales.</h2>
@@ -117,6 +117,8 @@
     </div>
     <!-- Linea de división-->
     <hr>
+
+    <!--Contenedor de los componentes del apartado de Servicios-->
     <div class="row featurette  contenedor2">
         <div class="col-md-5">
             <img class="featurette-image img-fluid mx-auto" style="width: 500px; height: 500px;"
@@ -140,7 +142,7 @@
     <hr>
 
     <!--Contenedor del Blockquote-->
-    <blockquote class="misionVision">
+    <blockquote id="misionVision">
         <center class="ali-MV mt-5">
             <Font color="purple">
                 <h1>Misión y Visión</h1>
@@ -179,15 +181,38 @@
 
     <!-- Linea de división-->
     <hr>
+    <!--Creación del Blockquote-->
+    <blockquote id="contactenos">
+        <center class="ali-MV mt-5">
+            <Font color="purple">
+                <h1>Contáctenos</h1>
+            </Font>
+        </center>
+    </blockquote>
 
+    <!--Creación del formulario-->
+    <form class="formulario">
+        <div class="form-group">
+            <label for="email1">Correo electrónico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su email">
+        </div>
+        <div class="form-group">
+            <label for="mensaje1">Mensaje</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Deje su mensaje">
+        </div>
+        <div class="d-flex justify-content-center m-lg-3">
+            <button type="submit" class="btn btn-primary" style="background-color: #d481d4;">Enviar</button>
+        </div>
+    </form>
+    <!--Creación del Nav-->
+    <nav class="nav flex-column mt-5" style="background-color: #f0d0f0">
+        <h5 style="color:purple ;">Acerca de Nosotros</h5>
+        <a class="nav-link active" href="#lisos">Quienes somos?</a>
+        <a class="nav-link" href="#contactenos">Política de privacidad</a>
+        <a class="nav-link" href="#contactenos">Contactos</a>
+    </nav>
 
-
-
-
-
-
-
-
+    <!--Footer-->
     <footer class="footer">
         <div class="container-footer">
             <p>© 2022 Universidad de las Fuerzas Armadas Espe.</p>
@@ -221,11 +246,17 @@
         color: purple;
     }
 
+    .formulario {
+        margin-left: 300px;
+        margin-right: 300px;
+
+    }
+
     .footer .container-footer {
         background-color: #C8A2C8;
         text-align: center;
-        margin-top: 400px;
-        padding-top: 50px;
+        margin-top: 2px;
+        padding-top: 40px;
         color: purple;
     }
 </style>
