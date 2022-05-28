@@ -1,4 +1,4 @@
-# Se importan las librerias necesarias para trabajar con el framwork Flask
+# Se importa la libreria Flask 
 from flask import Flask, render_template
 
 # Se crea la aplicación con parámetro el nombre de la aplicación y el nombre de la carpeta donde se encuentra el archivo html
